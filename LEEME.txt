@@ -13,4 +13,20 @@ Versión Base de datos = 5.1.1
 
 4- Ingresar a http://localhost/desis/formulario.php y ya se debería poder usar el fomulario sin problemas
 
-Nota: Mi XAMPP tiene configurado mySQL en el puerto 8111, esto podría generar un error.
+NOTA: Mi XAMPP tiene configurado mySQL en el puerto 8111, esto podría generar un error.
+SI PASA ESTO SE DEBERIA SOLUCIONAR MODIFICANDO 3 ARCHIVOS:
+
+Archivo: guardarInfo.php
+linea: 14
+codigo actual: $servername = "localhost:8111";
+codigo nuevo: $servername = "localhost";
+
+Archivo: cargarSelect.php
+linea: 5
+codigo actual: $conexion=mysqli_connect('localhost:8111','root','','desis');
+codigo nuevo: $conexion=mysqli_connect('localhost','root','','desis');
+
+Archivo: cargarComunas.php
+linea: 8
+codigo actual: $conexion=mysqli_connect('localhost:8111','root','','desis');
+codigo nuevo: $conexion=mysqli_connect('localhost','root','','desis');
