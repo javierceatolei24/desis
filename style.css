@@ -1,0 +1,17 @@
+label{
+  display: inline-block;
+}
+
+.texto {
+  	width: 200px;
+}
+
+.respuesta{
+	width: 280px;
+
+}
+
+select{
+    width: 290px;
+    }
+

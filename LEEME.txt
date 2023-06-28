@@ -1,0 +1,16 @@
+Versión PHP = 7.4.27
+Versión Base de datos = 5.1.1
+
+1- Montar la carpeta del proyecto en algún servidor en mi caso use XAMPP
+
+2- Crear la base da datos puede ser de 2 maneras:
+	2.1- Importando mediante phpMyadmin el archivo ubicado en SQL/creacion_bd.sql
+	2.2- Ejecutanod el codigo SQL qeu está al interior del archivo ubicado en SQL/creacion_bd.sql
+
+3- Crear las tablas en la base de datos junto a su contenido, también de 2 maneras posibles:
+	2.1- Importando mediante phpMyadmin el archivo ubicado en SQL/contenido_bd.sql
+	2.2- Ejecutanod el codigo SQL que está al interior del archivo ubicado en SQL/contenido_bd.sql
+
+4- Ingresar a http://localhost/desis/formulario.php y ya se debería poder usar el fomulario sin problemas
+
+Nota: Mi XAMPP tiene configurado mySQL en el puerto 8111, esto podría generar un error.
